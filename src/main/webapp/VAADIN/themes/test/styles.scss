@@ -1,0 +1,18 @@
+@import "test";
+@import "addons.scss";
+
+// This file prefixes all rules with the theme name to avoid causing conflicts with other themes.
+// The actual styles should be defined in test.scss
+body {
+  background-color: #00a7f5;
+}
+
+.my-panel {
+  padding: 20px 20px 20px 0;
+  box-sizing: border-box;
+}
+
+.test {
+  @include addons;
+  @include test;
+}
